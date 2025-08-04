@@ -1,59 +1,32 @@
-# 📈 Random Stock Info Viewer
+# Stock Info Retriever
 
-A lightweight Python application that displays live data for randomly selected stocks using a **free API key**. The app returns key company details including current price, market cap, listing date, return on investment, and more.
+This Python script fetches and displays random stock market data using the Free API from api.freeapi.app. It's designed for quick demos and learning purposes around API consumption.
 
-## 🚀 Features
+## Features
 
-- Get real-time stock data from a free public API
-- Display key metrics like:
-  - Company Name
-  - Current Price
-  - Listing Date
-  - ISIN
-  - Return on Investment (%)
-  - Market Capitalization (₹ Cr.)
-  - ROCE (%)
-- Quick setup and easy to use
+- Retrieves random stock details
+- Displays company name, ISIN, listing date, ROE, ROCE, market cap, and current price
+- Includes basic error handling for connection issues
 
-## 🧪 Example Output
+## Requirements
 
-```
-Name: Palred Technologies Limited  
-Current Price: ₹ 192  
-Listing Date: 09-May-16  
-ISIN: INE218G01033  
-Return on Investment: -0.08%  
-Market Cap: ₹ 235 Cr.  
-ROCE: 4.41%
-```
+- Python 3.x(x = 9 or 9+)
+- requests library (`pip install requests`)
 
-## 🔧 Getting Started
+## How to Use
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-username/random-stock-info-viewer.git
-   cd random-stock-info-viewer
-   ```
+1. Run the script with: `python script_name.py`
+   (Replace `script_name.py` with your actual filename)
+2. The script will print random stock information from the API.
+3. If the API fails or internet is unavailable, an exception is raised:
+   `"failed please check your internet connection"`
 
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+## API Details
 
-3. Add your API key to the `.env` file:
-   ```
-   API_KEY=your_api_key_here
-   ```
+- Source: FreeAPI – https://api.freeapi.app
+- Endpoint: `https://api.freeapi.app/api/v1/public/stocks/stock/random`
+- This is a demo API and the data is randomly generated for learning/testing.
 
-4. Run the app:
-   ```bash
-   python app.py
-   ```
+## About
 
-## 🔍 Data Source
-
-This app uses data from [ExampleFreeAPI.com](https://examplefreeapi.com) _(replace with actual API name)_ which provides free access to stock data for research and educational use.
-
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).
+A minimal and practical script created to demonstrate how to consume REST APIs in Python using the requests module.
