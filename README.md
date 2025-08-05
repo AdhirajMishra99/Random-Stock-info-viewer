@@ -1,6 +1,6 @@
 # Stock Info Retriever
 
-This Python script fetches and displays random stock market data using the Free API from api.freeapi.app. It's designed for quick demos and learning purposes around API consumption.
+This Python script fetches and displays random stock market data using the Free API from api.freeapi.app in CLI/TERMINAL. It's designed for quick demos and learning purposes around API consumption.
 
 ## Features
 
